@@ -6,7 +6,9 @@ from src.pages.registration_page import RegistrationPage
 
 registration_page = RegistrationPage()
 
-
+@allure.story("Пользователь регистрируется как студент")
+@allure.tag("REGISTER")
+@allure.id("1")
 def test_fill_form(setup_browser):
     with allure.step("Открытие браузера"):
         registration_page.open_browser()
