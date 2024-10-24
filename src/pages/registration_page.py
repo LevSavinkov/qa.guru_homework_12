@@ -17,7 +17,7 @@ class RegistrationPage:
         self.submit_button = browser.element("#submit")
     
     @staticmethod
-    def open_browser():
+    def open_page():
         browser.open("https://demoqa.com/automation-practice-form")
     
     @staticmethod

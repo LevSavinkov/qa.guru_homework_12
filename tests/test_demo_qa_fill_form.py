@@ -11,7 +11,7 @@ registration_page = RegistrationPage()
 @allure.id("1")
 def test_fill_form(setup_browser):
     with allure.step("Открытие браузера"):
-        registration_page.open_browser()
+        registration_page.open_page()
         registration_page.delete_banners()
     
     with allure.step("Заполнение формы"):
