@@ -29,7 +29,7 @@ def test_fill_form(setup_browser):
         registration_page.choose_city(test_city)
         registration_page.submit_button.click()
     
-    with allure.step("Проверка зполненных данных"):
+    with allure.step("Проверка заполненных данных"):
         registration_page.assert_user_data("Student Name", f"{name} {surname}")
         registration_page.assert_user_data("Student Email", test_email)
         registration_page.assert_user_data("Gender", male_gender)
